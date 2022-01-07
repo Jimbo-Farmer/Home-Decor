@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: $font-headings;
+    color: $colour-antique;
+}
+
+p {
+    font-family: $font-copy;
+}
+
+.cta {
+    display: inline-block;
+    background-color: $colour-royal;
+    color: white;
+    text-decoration: none;
+    padding: 4px 16px;
+    border-radius: 4px;
+    font-family: $font-copy;
+    &:hover {
+        background-color: $colour-antique;    
+    }
+}
+
+.strip {
+    height: 48px;
+    width: 100%;
+}
+
+

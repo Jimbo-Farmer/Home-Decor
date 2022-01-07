@@ -1,0 +1,37 @@
+header {
+    padding: 24px 10% 24px 10%;
+    position: relative;
+    text-align: center;
+    border-top: 6px solid $colour-antique;
+}
+
+#brand, nav {
+    display: inline-block;
+}
+
+#logo {
+    height: 70px;
+}
+
+#brand {
+    font-size: 4rem;
+    letter-spacing: 10px;
+    margin-left: 40px;
+}
+
+nav {
+    margin-top: 20px;
+    display: block;
+    a {
+        
+        font-size: 1.5rem;
+        text-decoration: none;
+        margin: 15px;
+        // &:first-of-type{
+        //     margin-left: 0;
+        // }
+        // &:last-of-type {
+        //     margin-right: 0;
+        // }
+    }
+}

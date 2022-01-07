@@ -27,6 +27,10 @@ p {
   width: 100%;
 }
 
+.parquet {
+  background-image: url("../images/parquet.jpg");
+}
+
 header {
   padding: 24px 10% 24px 10%;
   position: relative;
@@ -45,7 +49,8 @@ header {
 #brand {
   font-size: 4rem;
   letter-spacing: 10px;
-  margin-left: 40px;
+  margin-left: 50px;
+  color: #463401;
 }
 
 nav {
@@ -164,9 +169,5 @@ main {
   height: 100%;
   -o-object-fit: fill;
      object-fit: fill;
-}
-
-.parquet {
-  background-image: url("../../images/parquet.jpg");
 }
 /*# sourceMappingURL=style.css.map */

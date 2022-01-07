@@ -25,9 +25,11 @@ main {
         text-align: center;
         margin: 0;
     }
+    .image-container {
+        flex: 1;
+    }
     img {
         width: 100%;
-        flex: 1;
         object-fit: cover;
     }
     .featured-copy {

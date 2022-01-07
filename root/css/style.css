@@ -214,11 +214,14 @@ main {
   margin: 0;
 }
 
-.featured img {
-  width: 100%;
+.featured .image-container {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.featured img {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }

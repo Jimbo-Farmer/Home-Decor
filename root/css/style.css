@@ -4,7 +4,7 @@ body {
   color: #463401;
 }
 
-p {
+p, h1, h2, h3, h4 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -29,6 +29,10 @@ p {
 
 .parquet {
   background-image: url("../images/parquet.jpg");
+}
+
+.attributes {
+  padding: 24px;
 }
 
 header {
@@ -307,8 +311,10 @@ main {
   padding: 6px 0;
 }
 
-.categories .category-item .copy p {
+.categories .category-item .copy p, .categories .category-item .copy h2, .categories .category-item .copy h3 {
   margin: 0;
+  font-size: 1rem;
+  font-weight: normal;
 }
 
 .categories .image-container {

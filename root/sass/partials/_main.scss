@@ -82,8 +82,10 @@ main {
             flex-wrap: wrap;
             justify-content: space-between;
             padding: 6px 0;
-            p {
+            p, h2, h3 {
                 margin: 0;
+                font-size: 1rem;
+                font-weight: normal;
             }
         }
     }

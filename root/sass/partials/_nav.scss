@@ -1,8 +1,86 @@
 header {
-    padding: 24px 10% 24px 10%;
+    padding: 24px 11% 24px 11%;
     position: relative;
-    text-align: center;
+    // text-align: center;
     border-top: 6px solid $colour-antique;
+    max-width: 1920px;
+    @media (max-width: 1000px) {
+        #logo {
+            height: 50px;
+        }
+        #brand {
+            font-size: 2.5rem;
+        }
+        nav {
+            display: none;
+        }
+        .user {
+            display: none;
+        }
+        .hamburger {
+            display: unset;
+        }
+    }
+    @media (max-width: 700px){
+        padding: 24px 5%;
+        #brand {
+            margin-left: 10px;
+            font-size: 2rem;
+        }
+        #logo {
+            height: 32px;
+        }
+        .hamburger {
+            width: 50px;
+            height: 42px;
+            right: 5%;
+            div {
+                top: 6px;
+                left: 6px;
+                width: 38px;
+                &.middle-bar {
+                    top: 16px;
+                }
+                &.bottom-bar {
+                    top: 26px;
+                }
+            }
+        }
+        
+    }
+    @media (max-width: 500px){
+        #brand {
+            font-size: 1.5rem;
+            letter-spacing: 5px;
+        }
+    }
+}
+
+.hamburger{
+    display: none;
+    position: absolute;
+    right: 11%;
+    top: 24px;
+    width: 70px;
+    height: 60px;
+    border: 2px solid $colour-royal;
+    border-radius: 10px;
+    z-index: 250;
+    div {
+        width: 45px;
+        height: 3px;
+        background-color: $colour-royal;
+        border-radius: 3px;
+        position: relative;
+        left: 12px;
+        top: 12px;
+   }  
+   .middle-bar {
+       top: 25px;
+   }
+   .bottom-bar {
+       top: 39px;
+   }
 }
 
 #brand, nav {
@@ -23,16 +101,31 @@ header {
 nav {
     margin-top: 20px;
     display: block;
-    a {
-        
+    a {  
         font-size: 1.5rem;
         text-decoration: none;
         margin: 15px;
-        // &:first-of-type{
-        //     margin-left: 0;
-        // }
-        // &:last-of-type {
-        //     margin-right: 0;
-        // }
+    }
+}
+
+.user {
+    position: absolute;
+    right: 11%;
+    top: 24px;
+    text-align: right;
+    div {
+        display: block;
+        margin: 12px 0;
+        font-size: 1.2rem;
+    }
+    a {
+        text-decoration: unset;
+        
+    }
+    .basket img {
+        height: 25px;
+        width: 25px;
+        position: relative;
+        top: 3px;
     }
 }

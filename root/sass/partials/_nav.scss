@@ -105,10 +105,15 @@ nav {
         font-size: 1.5rem;
         text-decoration: none;
         margin: 15px;
+        color: $colour-antique;
         &:hover {
             text-decoration: underline;
         }
     }
+}
+
+.here {
+    text-decoration: underline;
 }
 
 .user {
@@ -120,12 +125,15 @@ nav {
         display: block;
         margin: 12px 0;
         font-size: 1.2rem;
+        :hover{
+            text-decoration: underline;
+        }
     }
     a {
         text-decoration: unset;
         
     }
-    .basket img {
+    img {
         height: 25px;
         width: 25px;
         position: relative;

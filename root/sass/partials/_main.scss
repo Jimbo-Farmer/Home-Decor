@@ -41,6 +41,25 @@ main {
     .cta {
         margin-top: 15px;
     }
+    &.kitchen-featured{
+        text-align: right;
+        flex-direction: row-reverse;
+        h1 {
+            text-align: right;
+        }
+        background-color: white;
+        .image-container {
+            @media (min-width: 1000px) {
+                flex: 0.8;
+            }
+        }
+        img {
+            filter: hue-rotate(8deg);
+        }
+        .featured-copy {
+            border-right: 2px solid $colour-antique;
+        }
+    }
 }
 
 .categories {
@@ -93,7 +112,7 @@ main {
         }
     }
     .image-container {
-        // height: 300px;
+        position: relative;
         overflow: hidden;
     }
     img {
@@ -101,6 +120,21 @@ main {
         object-fit: cover;
         width: 100%;
     }
+    .fav-icon {
+        position: absolute;
+        height: 25px;
+        width: 30px;
+        top: 0;
+        right: 0;
+        background-color: white;
+        padding: 8px;
+        border-bottom-left-radius: 4px;
+        fill: #091B9C;
+        &:hover {
+            cursor: pointer;
+            fill: rgb(150, 0, 0);  
+        }
+    }   
 }
 
 

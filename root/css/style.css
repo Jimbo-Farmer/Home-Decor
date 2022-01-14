@@ -150,9 +150,14 @@ nav a {
   font-size: 1.5rem;
   text-decoration: none;
   margin: 15px;
+  color: #463401;
 }
 
 nav a:hover {
+  text-decoration: underline;
+}
+
+.here {
   text-decoration: underline;
 }
 
@@ -169,11 +174,15 @@ nav a:hover {
   font-size: 1.2rem;
 }
 
+.user div :hover {
+  text-decoration: underline;
+}
+
 .user a {
   text-decoration: unset;
 }
 
-.user .basket img {
+.user img {
   height: 25px;
   width: 25px;
   position: relative;
@@ -241,6 +250,36 @@ main {
 
 .featured .cta {
   margin-top: 15px;
+}
+
+.featured.kitchen-featured {
+  text-align: right;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  background-color: white;
+}
+
+.featured.kitchen-featured h1 {
+  text-align: right;
+}
+
+@media (min-width: 1000px) {
+  .featured.kitchen-featured .image-container {
+    -webkit-box-flex: 0.8;
+        -ms-flex: 0.8;
+            flex: 0.8;
+  }
+}
+
+.featured.kitchen-featured img {
+  -webkit-filter: hue-rotate(8deg);
+          filter: hue-rotate(8deg);
+}
+
+.featured.kitchen-featured .featured-copy {
+  border-right: 2px solid #463401;
 }
 
 .categories {
@@ -326,6 +365,7 @@ main {
 }
 
 .categories .image-container {
+  position: relative;
   overflow: hidden;
 }
 
@@ -334,5 +374,22 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+}
+
+.categories .fav-icon {
+  position: absolute;
+  height: 25px;
+  width: 30px;
+  top: 0;
+  right: 0;
+  background-color: white;
+  padding: 8px;
+  border-bottom-left-radius: 4px;
+  fill: #091B9C;
+}
+
+.categories .fav-icon:hover {
+  cursor: pointer;
+  fill: #960000;
 }
 /*# sourceMappingURL=style.css.map */

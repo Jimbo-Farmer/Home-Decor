@@ -1,21 +1,25 @@
 body {
     margin: 0;
-    font-family: $font-base;
+    font-family: $font-copy;
     color: $colour-antique;
 }
 
-p, h1, h2, h3, h4 {
-    font-family: $font-copy;
+h1, h2, h3, h4, a {
+    font-family: $font-header;
 }
 
+
 .cta {
+    font-family: 'Nizza';
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 1.1rem;
     display: inline-block;
     background-color: $colour-royal;
     color: white;
     text-decoration: none;
-    padding: 4px 16px;
+    padding: 4px 13px 4px 16px;
     border-radius: 4px;
-    font-family: $font-copy;
     &:hover {
         background-color: $colour-antique;    
     }

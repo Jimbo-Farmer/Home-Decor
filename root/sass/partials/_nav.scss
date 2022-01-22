@@ -1,3 +1,9 @@
+
+@font-face {
+    font-family: "Nizza";
+    src: url("../fonts/Nizza.ttf") format("truetype");
+}
+
 header {
     padding: 24px 11% 24px 11%;
     position: relative;
@@ -9,7 +15,7 @@ header {
             height: 50px;
         }
         #brand {
-            font-size: 2.5rem;
+            font-size: 3rem;
         }
         nav {
             display: none;
@@ -25,7 +31,7 @@ header {
         padding: 24px 5%;
         #brand {
             margin-left: 10px;
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
         #logo {
             height: 32px;
@@ -50,7 +56,7 @@ header {
     }
     @media (max-width: 500px){
         #brand {
-            font-size: 1.5rem;
+            font-size: 2rem;
             letter-spacing: 5px;
         }
     }
@@ -92,9 +98,11 @@ header {
 }
 
 #brand {
-    font-size: 4rem;
-    letter-spacing: 10px;
+    font-size: 4.5rem;
+    letter-spacing: 15px;
     margin-left: 50px;
+    font-family: 'Nizza';
+    font-weight: bold;
     color: $colour-antique;
 }
 
@@ -108,6 +116,9 @@ nav {
         color: $colour-antique;
         &:hover {
             text-decoration: underline;
+        }
+        &:first-child {
+            margin-left: 0;
         }
     }
 }
